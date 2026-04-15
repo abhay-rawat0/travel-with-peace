@@ -1,4 +1,5 @@
 import TrustHighlights from './components/TrustHighlights'
+import ReviewFormSection from './components/ReviewFormSection'
 import Navbar from './components/Navbar'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import HeroSection from './components/HeroSection'
@@ -26,6 +27,7 @@ export default function App() {
       <FleetSection fleet={fleet} />
       <PackagesSection packages={packages} />
       <ReviewsSection reviews={reviews} />
+      <ReviewFormSection whatsapp={brand.whatsapp} />
       <GallerySection gallery={gallery} />
       <BookingForm />
       <ContactSection brand={brand} />
