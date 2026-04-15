@@ -4,7 +4,7 @@ export default function HeroSection({ brand }) {
       className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(2, 6, 23, 0.65), rgba(2, 6, 23, 0.65)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80')",
+          "linear-gradient(rgba(2, 6, 23, 0.65), rgba(2, 6, 23, 0.65)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80')",
       }}
     >
       <div className="max-w-5xl mx-auto px-4 text-center text-white">
