@@ -1,0 +1,190 @@
+export const siteData = {
+  brand: {
+    name: 'Travel With Peace',
+    tagline: 'Explore Uttarakhand & Himachal with Comfort',
+    heroTitle: 'Travel With Peace',
+    heroSubtitle:
+      'Reliable mountain travel for Char Dham, Chopta, Manali, family trips, pilgrimage tours, and peaceful getaways.',
+    heroImage:
+      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80',
+    phone: '+91 8448621262',
+    whatsapp: '919315692621',
+    serviceAreas: [
+      'Delhi Pickup',
+      'Dehradun Pickup',
+      'Haridwar Pickup',
+      'Uttarakhand',
+      'Himachal Pradesh',
+    ],
+    specialTrips: [
+      'Char Dham',
+      'Chopta',
+      'Manali',
+      'Kedarnath',
+      'Badrinath',
+      'Custom Tours',
+    ],
+  },
+
+  destinations: [
+    {
+      id: 1,
+      name: 'Char Dham Yatra',
+      state: 'Uttarakhand',
+      category: 'Pilgrimage',
+      duration: '10–12 Days',
+      bestTime: 'May to October',
+      desc: 'Sacred journey covering Yamunotri, Gangotri, Kedarnath, and Badrinath with scenic mountain routes.',
+      highlights: ['Yamunotri', 'Gangotri', 'Kedarnath', 'Badrinath'],
+      priceNote: 'Price on request',
+      image: '/images/chardham.jpg',
+    },
+    {
+      id: 2,
+      name: 'Chopta Tungnath',
+      state: 'Uttarakhand',
+      category: 'Nature & Trek',
+      duration: '2–4 Days',
+      bestTime: 'March to June, September to December',
+      desc: 'Mini Switzerland of India with stunning Himalayan views and access to the famous Tungnath trek.',
+      highlights: ['Tungnath Temple', 'Chandrashila', 'Snow Views'],
+      priceNote: 'Price on request',
+      image:
+        '/images/tungnath.jpg',
+    },
+    {
+      id: 3,
+      name: 'Auli',
+      state: 'Uttarakhand',
+      category: 'Hill Station',
+      duration: '3–5 Days',
+      bestTime: 'December to March',
+      desc: 'A scenic hill station known for skiing, cable car rides, and panoramic Himalayan landscapes.',
+      highlights: ['Skiing', 'Ropeway', 'Snow Adventure'],
+      priceNote: 'Price on request',
+      image:
+        '/images/auli.jpg',
+    },
+    {
+      id: 4,
+      name: 'Manali',
+      state: 'Himachal Pradesh',
+      category: 'Adventure',
+      duration: '4–6 Days',
+      bestTime: 'October to June',
+      desc: 'A favorite mountain escape with snowy peaks, river valleys, and thrilling adventure activities.',
+      highlights: ['Solang Valley', 'Atal Tunnel', 'Rohtang Route'],
+      priceNote: 'Price on request',
+      image:
+        '/images/manali.jpg',
+    },
+    {
+      id: 5,
+      name: 'Kedarnath',
+      state: 'Uttarakhand',
+      category: 'Pilgrimage',
+      duration: '3–5 Days',
+      bestTime: 'May to October',
+      desc: 'A deeply spiritual Himalayan journey perfect for pilgrims and adventure-loving devotees.',
+      highlights: ['Temple Route', 'Helicopter Option', 'Mountain Views'],
+      priceNote: 'Price on request',
+      image:
+        '/images/kedarnath.jpg',
+    },
+    {
+      id: 6,
+      name: 'Nainital',
+      state: 'Uttarakhand',
+      category: 'Hill Station',
+      duration: '2–4 Days',
+      bestTime: 'All Year',
+      desc: 'A relaxing lake town ideal for family vacations, peaceful weather, and scenic road trips.',
+      highlights: ['Naini Lake', 'Mall Road', 'Snow View'],
+      priceNote: 'Price on request',
+      image:
+        '/images/nanital.jpg',
+    },
+  ],
+
+  fleet: [
+    {
+      id: 1,
+      name: 'Toyota Innova Crysta #1',
+      type: 'SUV / MUV',
+      seats: '6–7 Seater',
+      use: 'Family tours & airport transfers',
+      luggage: 'Medium to Large',
+      features: ['AC', 'Comfort Seating', 'Long Route Ready'],
+      availability: 'Available',
+    },
+    {
+      id: 2,
+      name: 'Toyota Innova Crysta #2',
+      type: 'SUV / MUV',
+      seats: '6–7 Seater',
+      use: 'Comfortable long-route hill travel',
+      luggage: 'Medium to Large',
+      features: ['AC', 'Hill Travel Comfort', 'Pilgrimage Ready'],
+      availability: 'Available',
+    },
+    {
+      id: 3,
+      name: 'Force Urbania',
+      type: 'Luxury Van',
+      seats: '10–17 Seater',
+      use: 'Premium group tours, family travel & pilgrimage trips',
+      luggage: 'Large',
+      features: ['Premium Cabin', 'Group Friendly', 'Long Distance Comfort'],
+      availability: 'Available',
+    },
+  ],
+
+  packages: [
+    {
+      id: 1,
+      title: 'Char Dham Special Package',
+      duration: '10–12 Days',
+      price: 'Price on request',
+      includes: ['Driver', 'Fuel', 'Toll', 'Parking'],
+    },
+    {
+      id: 2,
+      title: 'Chopta Weekend Trip',
+      duration: '2–4 Days',
+      price: 'Price on request',
+      includes: ['Pickup', 'Drop', 'Sightseeing'],
+    },
+    {
+      id: 3,
+      title: 'Manali Family Tour',
+      duration: '4–6 Days',
+      price: 'Price on request',
+      includes: ['Outstation Trip', 'Driver', 'Custom Stops'],
+    },
+  ],
+
+  reviews: [
+    {
+      id: 1,
+      name: 'Happy Family Trip',
+      text: 'Very comfortable journey, clean vehicle, and smooth driving. Great experience for our mountain trip.',
+    },
+    {
+      id: 2,
+      name: 'Pilgrimage Tour',
+      text: 'Excellent support for our Char Dham travel. Safe ride and peaceful trip throughout.',
+    },
+    {
+      id: 3,
+      name: 'Group Booking',
+      text: 'Force Urbania was spacious and comfortable. Perfect for group travel with luggage.',
+    },
+  ],
+
+  gallery: [
+    '/images/dharidevi.jpg',
+    '/images/neemkaroli.jpg',
+    '/images/kasol.jpg',
+    '/images/harshil.jpg',
+  ],
+}
