@@ -1,3 +1,4 @@
+import TrustHighlights from './components/TrustHighlights'
 import Navbar from './components/Navbar'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import HeroSection from './components/HeroSection'
@@ -19,6 +20,7 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <Navbar brand={brand.name} whatsapp={brand.whatsapp} />
       <HeroSection brand={brand} />
+      <TrustHighlights />
       <AboutSection />
       <DestinationsSection destinations={destinations} />
       <FleetSection fleet={fleet} />

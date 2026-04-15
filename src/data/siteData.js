@@ -164,22 +164,35 @@ export const siteData = {
   ],
 
   reviews: [
-    {
-      id: 1,
-      name: 'Happy Family Trip',
-      text: 'Very comfortable journey, clean vehicle, and smooth driving. Great experience for our mountain trip.',
-    },
-    {
-      id: 2,
-      name: 'Pilgrimage Tour',
-      text: 'Excellent support for our Char Dham travel. Safe ride and peaceful trip throughout.',
-    },
-    {
-      id: 3,
-      name: 'Group Booking',
-      text: 'Force Urbania was spacious and comfortable. Perfect for group travel with luggage.',
-    },
-  ],
+  {
+    id: 1,
+    name: 'Rahul Sharma',
+    trip: 'Char Dham Yatra',
+    text: 'Very smooth journey and clean vehicle. Driver was polite and experienced on mountain roads.',
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: 'Priya Verma',
+    trip: 'Chopta Tour',
+    text: 'Amazing service and timely pickup. The trip felt safe and comfortable throughout.',
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: 'Amit Rawat',
+    trip: 'Manali Family Tour',
+    text: 'Booked for a family tour and everything was hassle-free. Driver was helpful and the journey felt safe even on mountain roads.',
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: 'Group Booking',
+    trip: 'Force Urbania',
+    text: 'Force Urbania was spacious and comfortable. Perfect for group travel with luggage.',
+    rating: 5,
+  },
+],
 
   gallery: [
     '/images/dharidevi.jpg',

@@ -1,22 +1,25 @@
-export default function HeroSection({ brand }) {
+function HeroSection({ brand }) {
   return (
     <section
-      className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center"
+      className="relative min-h-[85vh] bg-cover bg-center flex items-center justify-center text-center px-6"
       style={{
-        backgroundImage:
-          "linear-gradient(rgba(2, 6, 23, 0.65), rgba(2, 6, 23, 0.65)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80')",
+        backgroundImage: "url('/hero.jpg')",
       }}
     >
-      <div className="max-w-5xl mx-auto px-4 text-center text-white">
-        <span className="inline-block rounded-full bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur">
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/45"></div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-4xl text-white">
+        <p className="inline-block rounded-full bg-white/20 px-4 py-2 text-xs md:text-sm font-medium backdrop-blur-sm">
           Explore Uttarakhand & Himachal with Comfort
-        </span>
+        </p>
 
         <h1 className="mt-6 text-4xl md:text-6xl font-bold leading-tight">
           Travel With Peace
         </h1>
 
-        <p className="mt-4 text-lg md:text-xl text-slate-200 max-w-3xl mx-auto">
+        <p className="mt-4 text-lg md:text-xl text-slate-200 max-w-2xl mx-auto">
           Reliable mountain travel for Char Dham, Chopta, Manali, family trips,
           pilgrimage tours, and peaceful getaways.
         </p>
@@ -25,10 +28,14 @@ export default function HeroSection({ brand }) {
           Pickup available from Delhi • Dehradun • Haridwar
         </p>
 
+        <p className="mt-2 text-sm text-slate-300">
+          Family trips • Pilgrimage tours • Comfortable mountain travel
+        </p>
+
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="tel:+918448621262"
-            className="rounded-xl bg-white px-6 py-3 font-semibold text-slate-900 hover:bg-slate-100 transition"
+            href={`tel:${brand.phone}`}
+            className="rounded-2xl bg-white text-slate-900 px-6 py-3 font-semibold hover:bg-slate-100 transition"
           >
             Call Now
           </a>
@@ -37,12 +44,18 @@ export default function HeroSection({ brand }) {
             href={`https://wa.me/${brand.whatsapp}`}
             target="_blank"
             rel="noreferrer"
-            className="rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition"
+            className="rounded-2xl bg-emerald-500 text-white px-6 py-3 font-semibold hover:bg-emerald-600 transition"
           >
             Book on WhatsApp
           </a>
         </div>
+
+        <p className="mt-6 text-xs md:text-sm text-slate-300">
+          Trusted by families • Comfortable mountain travel • Quick WhatsApp support
+        </p>
       </div>
     </section>
   )
 }
+
+export default HeroSection
