@@ -1,56 +1,69 @@
 import SectionTitle from './SectionTitle'
 
 export default function DestinationsSection({ destinations }) {
+  const whatsapp = '919315692621'
+
+  const createWhatsAppLink = (destinationName) => {
+    const message = `Hello Travel With Peace, I want details for ${destinationName}. Pickup cities: Delhi / Dehradun / Haridwar.`
+    return `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`
+  }
+
   return (
-    <section id="destinations" className="bg-white py-16">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="destinations" className="py-16 bg-slate-50">
+      <div className="max-w-7xl mx-auto px-4">
         <SectionTitle
-          title="Popular Destinations"
-          subtitle="Discover spiritual tours, hill stations, and peaceful mountain getaways"
+          eyebrow="Popular Tours"
+          title="Explore Uttarakhand & Himachal"
+          subtitle="Pilgrimage, mountain escapes, snow trips, and family tours with comfortable vehicles."
         />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {destinations.map((d) => (
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {destinations.map((item) => (
             <div
-              key={d.id}
-              className="bg-slate-50 rounded-3xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition"
+              key={item.id}
+              className="overflow-hidden rounded-3xl bg-white shadow-md border border-slate-100 hover:shadow-xl transition duration-300"
             >
-              <img src={d.image} alt={d.name} className="w-full h-52 object-cover" />
+              <div className="h-56 overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="h-full w-full object-cover"
+                />
+              </div>
 
               <div className="p-6">
-                <div className="flex items-center justify-between gap-3">
-                  <span className="text-sm font-medium text-emerald-700">{d.state}</span>
-                  <span className="text-xs px-3 py-1 rounded-full bg-emerald-100 text-emerald-800">
-                    {d.category}
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-sm font-semibold text-emerald-700">
+                    {item.region}
+                  </span>
+                  <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">
+                    {item.category}
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-bold mt-3">{d.name}</h3>
+                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                  {item.name}
+                </h3>
 
-                <p className="mt-3 text-slate-600">{d.desc}</p>
+                <p className="text-slate-600 mb-4 leading-7">
+                  {item.description}
+                </p>
 
-                <div className="mt-4 space-y-2 text-sm text-slate-600">
-                  <p>
-                    <span className="font-semibold">Duration:</span> {d.duration}
-                  </p>
-                  <p>
-                    <span className="font-semibold">Best Time:</span> {d.bestTime}
-                  </p>
-                  <p>
-                    <span className="font-semibold">Pricing:</span> {d.priceNote}
-                  </p>
+                <div className="space-y-2 text-sm text-slate-700 mb-5">
+                  <p><strong>Duration:</strong> {item.duration}</p>
+                  <p><strong>Best Time:</strong> {item.bestTime}</p>
+                  <p><strong>Pricing:</strong> {item.pricing}</p>
+                  <p><strong>Pickup:</strong> {item.pickup?.join(', ')}</p>
                 </div>
 
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {d.highlights.map((item, idx) => (
-                    <span
-                      key={idx}
-                      className="text-xs px-3 py-1 rounded-full bg-slate-200 text-slate-700"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
+                <a
+                  href={createWhatsAppLink(item.name)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex w-full items-center justify-center rounded-xl bg-emerald-600 px-4 py-3 text-white font-semibold hover:bg-emerald-700 transition"
+                >
+                  Enquire on WhatsApp
+                </a>
               </div>
             </div>
           ))}

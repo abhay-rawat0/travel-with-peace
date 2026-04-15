@@ -7,6 +7,7 @@ import FleetSection from './components/FleetSection'
 import PackagesSection from './components/PackagesSection'
 import ReviewsSection from './components/ReviewsSection'
 import GallerySection from './components/GallerySection'
+import BookingForm from './components/BookingForm'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import { siteData } from './data/siteData'
@@ -24,6 +25,7 @@ export default function App() {
       <PackagesSection packages={packages} />
       <ReviewsSection reviews={reviews} />
       <GallerySection gallery={gallery} />
+      <BookingForm />
       <ContactSection brand={brand} />
       <Footer brand={brand} />
       <FloatingWhatsApp whatsapp={brand.whatsapp} />
