@@ -1,38 +1,43 @@
 export default function HeroSection({ brand }) {
   return (
     <section
-      id="home"
-      className="relative min-h-[88vh] flex items-center justify-center bg-cover bg-center"
+      className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(2,6,23,0.55), rgba(2,6,23,0.65)), url('${brand.heroImage}')`,
+        backgroundImage:
+          "linear-gradient(rgba(2, 6, 23, 0.65), rgba(2, 6, 23, 0.65)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80')",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60" />
+      <div className="max-w-5xl mx-auto px-4 text-center text-white">
+        <span className="inline-block rounded-full bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur">
+          Explore Uttarakhand & Himachal with Comfort
+        </span>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center text-white">
-        <p className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 text-sm tracking-wide mb-5">
-          {brand.tagline}
+        <h1 className="mt-6 text-4xl md:text-6xl font-bold leading-tight">
+          Travel With Peace
+        </h1>
+
+        <p className="mt-4 text-lg md:text-xl text-slate-200 max-w-3xl mx-auto">
+          Reliable mountain travel for Char Dham, Chopta, Manali, family trips,
+          pilgrimage tours, and peaceful getaways.
         </p>
 
-        <h1 className="text-4xl md:text-7xl font-bold leading-tight">{brand.heroTitle}</h1>
-
-        <p className="mt-6 text-lg md:text-2xl max-w-3xl mx-auto text-slate-200">
-          {brand.heroSubtitle}
+        <p className="mt-4 text-sm md:text-base font-medium text-emerald-300">
+          Pickup available from Delhi • Dehradun • Haridwar
         </p>
 
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#destinations"
-            className="px-6 py-3 rounded-2xl bg-white text-slate-900 font-semibold shadow-lg hover:scale-105 transition"
+            href="tel:+918448621262"
+            className="rounded-xl bg-white px-6 py-3 font-semibold text-slate-900 hover:bg-slate-100 transition"
           >
-            Explore Tours
+            Call Now
           </a>
 
           <a
             href={`https://wa.me/${brand.whatsapp}`}
             target="_blank"
             rel="noreferrer"
-            className="px-6 py-3 rounded-2xl border border-white/30 bg-white/10 backdrop-blur font-semibold hover:bg-white/20 transition"
+            className="rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition"
           >
             Book on WhatsApp
           </a>

@@ -52,7 +52,12 @@ export default function DestinationsSection({ destinations }) {
                 <div className="space-y-2 text-sm text-slate-700 mb-5">
                   <p><strong>Duration:</strong> {item.duration}</p>
                   <p><strong>Best Time:</strong> {item.bestTime}</p>
-                  <p><strong>Pricing:</strong> {item.pricing}</p>
+                  <div className="flex items-center gap-2">
+  <strong>Pricing:</strong>
+  <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
+    {item.pricing}
+  </span>
+</div>
                   <p><strong>Pickup:</strong> {item.pickup?.join(', ')}</p>
                 </div>
 
